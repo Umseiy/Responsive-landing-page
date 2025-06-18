@@ -3,206 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GlowFit - Smart Fitness Band</title>
+    <title>SmartProduct Landing Page</title>
     <style>
-        /* Reset default styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-
-        body {
             font-family: 'Arial', sans-serif;
-            line-height: 1.6;
+        }
+        body {
+            background-color: #f5f5f5;
             color: #333;
-            background-color: #f9f9f9;
+            line-height: 1.6;
         }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px 0;
-        }
-
         header {
-            background-color: #222;
-            color: #fff;
-            padding: 20px 0;
-        }
-
-        header .logo {
-            font-size: 24px;
-            font-weight: bold;
+            background-color: #4CAF50;
+            color: white;
+            padding: 40px 20px;
             text-align: center;
         }
-
-        nav {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            margin-top: 10px;
-            flex-wrap: wrap;
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
         }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:focus, nav a:hover {
-            text-decoration: underline;
-        }
-
-        .hero {
-            background: linear-gradient(to right, #00c6ff, #0072ff);
-            color: #fff;
-            padding: 80px 20px;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 36px;
+        header p {
+            font-size: 1.2rem;
             margin-bottom: 20px;
         }
-
-        .hero p {
-            font-size: 18px;
-            margin-bottom: 30px;
-        }
-
-        .btn {
-            background-color: #fff;
-            color: #0072ff;
-            padding: 12px 25px;
+        header a {
+            background-color: white;
+            color: #4CAF50;
+            padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
             transition: background-color 0.3s;
-            display: inline-block;
         }
-
-        .btn:hover, .btn:focus {
-            background-color: #f1f1f1;
+        header a:hover {
+            background-color: #45a049;
+            color: white;
         }
-
         .features {
-            background-color: #fff;
-            padding: 60px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 40px 20px;
+            background-color: white;
+        }
+        .feature {
+            flex: 1 1 300px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #e0f7e0;
+            border-radius: 10px;
             text-align: center;
         }
-
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+        .feature img {
+            width: 80px;
+            margin-bottom: 15px;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
             margin-top: 30px;
         }
-
-        .feature-card {
-            background-color: #f0f0f0;
-            padding: 20px;
-            border-radius: 10px;
+        footer a {
+            color: #4CAF50;
+            margin: 0 10px;
+            text-decoration: none;
         }
-
-        .pricing {
-            background-color: #e0f7fa;
-            padding: 60px 20px;
-            text-align: center;
+        footer a:hover {
+            text-decoration: underline;
         }
-
-        .price-card {
-            background-color: #fff;
-            display: inline-block;
-            padding: 30px;
-            border-radius: 10px;
-        }
-
-        footer {
-            background-color: #222;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
-        }
-
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 28px;
+            header h1 {
+                font-size: 2rem;
             }
-
-            nav {
+            .features {
                 flex-direction: column;
-                gap: 10px;
+                align-items: center;
             }
         }
     </style>
 </head>
 <body>
 
-    <header role="banner">
-        <div class="container">
-            <h1 class="logo">GlowFit</h1>
-            <nav aria-label="Main Navigation">
-                <a href="#">Home</a>
-                <a href="#features">Features</a>
-                <a href="#pricing">Pricing</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
+    <!-- Hero Section -->
+    <header>
+        <h1>Welcome to SmartProduct</h1>
+        <p>Discover the best solutions to improve your life. Smart, efficient, and tailored just for you.</p>
+        <a href="#">Sign Up Now</a>
     </header>
 
-    <main>
-        <section class="hero" aria-label="Product Introduction">
-            <div class="container">
-                <h1>Track Your Fitness. Transform Your Life.</h1>
-                <p>The smart band that keeps you motivated and on track.</p>
-                <a href="#pricing" class="btn" role="button">Get Started</a>
-            </div>
-        </section>
-
-        <section id="features" class="features" aria-label="Product Features">
-            <div class="container">
-                <h2>Features</h2>
-                <div class="feature-grid">
-                    <div class="feature-card">
-                        <h3>Heart Rate Monitor</h3>
-                        <p>Track your heart rate in real-time for optimal workouts.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>Sleep Tracking</h3>
-                        <p>Monitor your sleep patterns and improve your rest.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>Water Resistant</h3>
-                        <p>Wear it anywhere – rain, swim, or sweat!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="pricing" class="pricing" aria-label="Product Pricing">
-            <div class="container">
-                <h2>Pricing</h2>
-                <div class="price-card">
-                    <h3>Only $49.99</h3>
-                    <p>Includes all features, free shipping, and a 1-year warranty.</p>
-                    <a href="#contact" class="btn" role="button">Order Now</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer id="contact" role="contentinfo">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Email: <a href="mailto:support@glowfit.com" style="color: #fff;">support@glowfit.com</a></p>
-            <p>Phone: <a href="tel:+1234567890" style="color: #fff;">+123-456-7890</a></p>
-            <p>&copy; 2025 GlowFit. All rights reserved.</p>
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature">
+            <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Easy to Use">
+            <h3>Easy to Use</h3>
+            <p>Our product is designed to be user-friendly and intuitive for everyone.</p>
         </div>
+        <div class="feature">
+            <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Highly Secure">
+            <h3>Highly Secure</h3>
+            <p>We prioritize your privacy and security with top-notch protection.</p>
+        </div>
+        <div class="feature">
+            <img src="https://cdn-icons-png.flaticon.com/512/483/483947.png" alt="24/7 Support">
+            <h3>24/7 Support</h3>
+            <p>Our dedicated team is always available to assist you anytime, anywhere.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact us: <a href="mailto:email@smartproduct@yahoo.com">email@smartproduct@yahoo.com</a></p>
+        <p>
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">Instagram</a>
+        </p>
+        <p>&copy; 2025 SmartProduct. All rights reserved.</p>
     </footer>
 
 </body>
-</html
+</html>
