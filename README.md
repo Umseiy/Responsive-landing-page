@@ -3,141 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartProduct Landing Page</title>
+    <title>Kuli-Kuli Crunchy Snack</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
         }
+
         body {
-            background-color: #f5f5f5;
+            background-color: #fff8f0;
             color: #333;
-            line-height: 1.6;
         }
+
         header {
-            background-color: #4CAF50;
+            background-color: #8b4513;
             color: white;
-            padding: 40px 20px;
+            padding: 20px;
             text-align: center;
         }
+
         header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+            font-size: 2.5em;
         }
-        header p {
-            font-size: 1.2rem;
+
+        nav {
+            margin-top: 10px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
             margin-bottom: 20px;
         }
-        header a {
-            background-color: white;
-            color: #4CAF50;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-        header a:hover {
-            background-color: #45a049;
-            color: white;
-        }
-        .features {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 40px 20px;
-            background-color: white;
-        }
-        .feature {
-            flex: 1 1 300px;
-            margin: 20px;
-            padding: 20px;
-            background-color: #e0f7e0;
-            border-radius: 10px;
-            text-align: center;
-        }
-        .feature img {
-            width: 80px;
+
+        .hero h2 {
+            font-size: 2em;
             margin-bottom: 15px;
-            animation: bounce 2s infinite;
         }
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
-            }
-            40% {
-                transform: translateY(-20px);
-            }
-            60% {
-                transform: translateY(-10px);
-            }
+
+        .hero p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto;
         }
+
         footer {
-            background-color: #333;
+            background-color: #8b4513;
             color: white;
             text-align: center;
-            padding: 20px 10px;
+            padding: 15px 10px;
             margin-top: 30px;
         }
-        footer a {
-            color: #4CAF50;
-            margin: 0 10px;
-            text-decoration: none;
+
+        footer p {
+            margin: 5px 0;
         }
-        footer a:hover {
-            text-decoration: underline;
-        }
+
         @media (max-width: 768px) {
             header h1 {
-                font-size: 2rem;
+                font-size: 2em;
             }
-            .features {
-                flex-direction: column;
-                align-items: center;
+
+            .hero h2 {
+                font-size: 1.5em;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Hero Section -->
     <header>
-        <h1>Welcome to SmartProduct</h1>
-        <p>Discover the best solutions to improve your life. Smart, efficient, and tailored just for you.</p>
-        <a href="#">Sign Up Now</a>
+        <h1>Kuli-Kuli Crunchy Snack</h1>
+        <nav>
+            <p>Crunchy & Spicy African Snacks</p>
+        </nav>
     </header>
 
-    <!-- Features Section -->
-    <section class="features">
-        <div class="feature">
-            <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Easy to Use">
-            <h3>Easy to Use</h3>
-            <p>Our product is designed to be user-friendly and intuitive for everyone.</p>
-        </div>
-        <div class="feature">
-            <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Highly Secure">
-            <h3>Highly Secure</h3>
-            <p>We prioritize your privacy and security with top-notch protection.</p>
-        </div>
-        <div class="feature">
-            <img src="https://cdn-icons-png.flaticon.com/512/483/483947.png" alt="24/7 Support">
-            <h3>24/7 Support</h3>
-            <p>Our dedicated team is always available to assist you anytime, anywhere.</p>
-        </div>
+    <section class="hero">
+        <img src="/mnt/data/file-HJCWQ2oajyrRRxnVD2T1DK" alt="Kuli-Kuli Snack">
+        <h2>The Kuli-Kuli Everyone Craves!</h2>
+        <p>Enjoy our delicious, crunchy, and spicy African Kuli-Kuli snacks made with love and tradition. Perfect for every occasion!</p>
     </section>
 
-    <!-- Footer Section -->
     <footer>
-        <p>Contact us: <a href="mailto:email@smartproduct@yahoo.com">email@smartproduct@yahoo.com</a></p>
-        <p>
-            <a href="#">Facebook</a> | 
-            <a href="#">Twitter</a> | 
-            <a href="#">Instagram</a>
-        </p>
-        <p>&copy; 2025 SmartProduct. All rights reserved.</p>
+        <p>Contact Us</p>
+        <p>Address: Gaida Ring-Road Quarters</p>
+        <p>Phone: 08169493837</p>
+        <p>Email: crunchykulikuli@yahoo.com</p>
     </footer>
 
 </body>
-</html>
+</html
